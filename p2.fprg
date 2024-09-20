@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="p2"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-19 08:25:39 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMDktMTk7MDg6MjI6NTIgUE07MjI3OA=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMDktMTk7MDg6MjU6MzkgUE07MTsyMzk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pay, hours, payrate" type="Real" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <input variable="payrate"/>
+            <input variable="name"/>
+            <input variable="hours"/>
+            <assign variable="pay" expression="payrate*hours"/>
+            <output expression="name &amp; &quot;your pay is $&quot; &amp; pay" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
