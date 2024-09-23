@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="p5"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-22 07:32:47 PM"/>
+        <attribute name="created" value="cm9ibGU7SE9ORVk7MjAyNC0wOS0yMjswNzoyNzo0NyBQTTsyMjEx"/>
+        <attribute name="edited" value="cm9ibGU7SE9ORVk7MjAyNC0wOS0yMjswNzozMjo0NyBQTTsxOzIzMTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="item, discount" type="Real" array="False" size=""/>
+            <input variable="item"/>
+            <input variable="discount"/>
+            <assign variable="discount" expression="discount*item"/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <assign variable="price" expression="item-discount"/>
+            <output expression="&quot; your discount is &quot; &amp; discount &amp; &quot; your price is &quot; &amp; price" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
