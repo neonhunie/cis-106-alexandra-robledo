@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="p4"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-22 07:26:48 PM"/>
+        <attribute name="created" value="cm9ibGU7SE9ORVk7MjAyNC0wOS0yMjswMjoxMTowMCBQTTsyMTg4"/>
+        <attribute name="edited" value="cm9ibGU7SE9ORVk7MjAyNC0wOS0yMjswNzoyNjo0OCBQTTsyOzIzMjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="credits" type="Real" array="False" size=""/>
+            <input variable="credits"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <input variable="name"/>
+            <declare name="tuition" type="Real" array="False" size=""/>
+            <assign variable="tuition" expression="credits*200+150"/>
+            <output expression="name &amp; &quot; your tuition is &quot; &amp; tuition" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
