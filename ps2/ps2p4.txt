@@ -1,0 +1,10 @@
+print ("enter make")
+make= input ()
+print ("enter model")
+model2 = input ()
+print ("enter msrp")
+msrp = float (input())
+print ("enter discount")
+discount= float (input())
+discountprice= msrp-msrp*discount
+print ("the make is "+ make + " the model is "+ model2 + " your discounted price is "+ str(discountprice))

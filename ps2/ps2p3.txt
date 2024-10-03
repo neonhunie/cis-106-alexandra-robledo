@@ -1,0 +1,4 @@
+print (" enter amount ")
+amount=float(input())
+distributedamount= amount/3
+print("The distributed amount is: "+str(distributedamount))

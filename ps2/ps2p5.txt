@@ -1,0 +1,6 @@
+print (" enter radius ")
+radius= float (input())
+pie= 3.174
+area= pie*radius*radius
+perimeter= 2*pie*radius
+print (" your area is "+str(area)+ " your perimeter is "+str(perimeter))

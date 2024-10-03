@@ -1,0 +1,8 @@
+print ( "enter your name")
+name= (input( ))
+print ( "enter your midterm term ")
+midterm = float (input())
+print ("enter your final grade ")
+final = float (input( ))
+grade = midterm+final
+print (name + " Your final grade is " + str(grade) )
