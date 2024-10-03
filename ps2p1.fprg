@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps2p1"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-26 07:34:35 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMDktMjY7MDc6MjM6MTIgUE07MjI3Mg=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMDktMjY7MDc6MzQ6MzUgUE07MTsyMzg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="symbol" type="String" array="False" size=""/>
+            <declare name="shares" type="Integer" array="False" size=""/>
+            <declare name="price, totalcost" type="Real" array="False" size=""/>
+            <input variable="symbol"/>
+            <input variable="shares"/>
+            <input variable="price"/>
+            <assign variable="totalcost" expression="shares*price"/>
+            <output expression="&quot; Your investment in &quot; &amp; symbol &amp; &quot; is worth $ &quot; &amp; totalcost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

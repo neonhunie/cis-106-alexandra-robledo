@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps2p3"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-02 07:51:34 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMDI7MDc6NDc6MjMgUE07MjI2Ng=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMDI7MDc6NTE6MzQgUE07MTsyMzcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="amount" type="Real" array="False" size=""/>
+            <input variable="amount"/>
+            <declare name="evenamount" type="Integer" array="False" size=""/>
+            <assign variable="evenamount" expression="amount/3"/>
+            <output expression="&quot; your distributed amount is &quot; &amp; evenamount" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

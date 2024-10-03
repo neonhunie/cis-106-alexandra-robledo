@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps2p5"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-02 08:02:27 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMDI7MDc6NTc6NTggUE07MjI3NQ=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMDI7MDg6MDI6MjcgUE07MTsyMzcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Real" array="False" size=""/>
+            <input variable="radius"/>
+            <declare name="area" type="Integer" array="False" size=""/>
+            <assign variable="area" expression="3.174*radius^2"/>
+            <declare name="perimeter" type="Real" array="False" size=""/>
+            <assign variable="perimeter" expression="2*3.174*radius"/>
+            <output expression="&quot; Your area is &quot; &amp; area &amp; &quot; your perimeter is &quot; &amp; perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

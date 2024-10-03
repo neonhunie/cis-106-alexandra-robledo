@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps2p3"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-26 08:13:21 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMDktMjY7MDg6MDc6NTYgUE07MjI4Mw=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMDktMjY7MDg6MTM6MjEgUE07MTsyMzgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="make, model" type="String" array="False" size=""/>
+            <declare name="msrp" type="Real" array="False" size=""/>
+            <declare name="discount" type="Real" array="False" size=""/>
+            <declare name="discountedprice" type="Real" array="False" size=""/>
+            <input variable="make"/>
+            <input variable="model"/>
+            <input variable="msrp"/>
+            <input variable="discount"/>
+            <assign variable="discountedprice" expression="msrp-(msrp*discount)"/>
+            <output expression="&quot; Your make is &quot; &amp; make &amp; &quot; Your model is &quot; &amp; model &amp; &quot; Your discountedprice is &quot; &amp; discountedprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
