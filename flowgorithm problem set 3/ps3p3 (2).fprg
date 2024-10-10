@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Y203DPDU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-03 08:28:17 PM"/>
+        <attribute name="created" value="WTIwM0RQRFU7WTIwM0RQT0Q7MjAyNC0xMC0wMzswNzo1MjozOSBQTTsyMzU0"/>
+        <attribute name="edited" value="WTIwM0RQRFU7WTIwM0RQT0Q7MjAyNC0xMC0wMzswODoyODoxNyBQTTsxOzI0NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="meal, tip15, tip18, tip20, total15, total18, total20" type="Real" array="False" size=""/>
+            <input variable="meal"/>
+            <assign variable="tip15" expression="meal*0.15"/>
+            <assign variable="tip18" expression="meal*0.18"/>
+            <assign variable="tip20" expression="meal*0.2"/>
+            <assign variable="total15" expression="meal+tip15"/>
+            <assign variable="total18" expression="meal+tip18"/>
+            <assign variable="total20" expression="meal+tip20"/>
+            <output expression="&quot;With 15% &quot; &amp;&quot;Total &quot; &amp; meal &amp; &quot;Tip &quot; &amp; tip15 &amp; &quot;Total with Tip &quot; &amp; total15" newline="True"/>
+            <output expression="&quot;With 18% &quot; &amp;&quot;Total &quot; &amp; meal &amp; &quot;Tip &quot; &amp; tip18 &amp; &quot;Total with Tip &quot; &amp; total18" newline="True"/>
+            <output expression="&quot;With 20% &quot; &amp;&quot;Total &quot; &amp; meal &amp; &quot;Tip &quot; &amp; tip20 &amp; &quot;Total with Tip &quot; &amp; total20" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

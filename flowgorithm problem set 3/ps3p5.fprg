@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps3p5"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-09 08:07:44 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMDk7MDg6MDM6MDAgUE07MjI2MQ=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMDk7MDg6MDc6NDQgUE07MTsyMzgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fixedcosts, priceperunit, costsperunit" type="Real" array="False" size=""/>
+            <input variable="fixedcosts"/>
+            <input variable="priceperunit"/>
+            <input variable="costsperunit"/>
+            <declare name="breakeven" type="Real" array="False" size=""/>
+            <assign variable="breakeven" expression="fixedcosts/priceperunit-costsperunit"/>
+            <output expression="&quot; your break even point is &quot; &amp; breakeven" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

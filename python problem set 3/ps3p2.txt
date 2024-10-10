@@ -1,0 +1,8 @@
+print ("enter price per share")
+pricepershare= float (input())
+print ("enter current stock price")
+currentprice= float (input())
+print ("enter quantity of stock")
+quantityofstock= float (input())
+valueofthestock = currentprice-pricepershare*quantityofstock
+print ("your value of stock is" + str(valueofthestock))

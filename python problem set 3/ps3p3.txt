@@ -1,0 +1,9 @@
+print ("Enter how much was meal") #asking user how much they paid for their meal
+meal= float (input())
+tip15= .15*meal
+tip18= .18*meal
+tip20= .20*meal
+#printing with 15% tip
+print("with 15% tip", "\n Total:", "{:.2F}".format(meal), "\n tip:",               "{:.2F}".format(tip15),"\n Total with tip","{:.2F}".format(meal+tip15))
+print("with 18% tip", "\n Total:", "{:.2F}".format(meal), "\n tip:",               "{:.2F}".format(tip15),"\n Total with tip","{:.2F}".format(meal+tip18))
+print("with 20% tip", "\n Total:", "{:.2F}".format(meal), "\n tip:",               "{:.2F}".format(tip15),"\n Total with tip","{:.2F}".format(meal+tip20))

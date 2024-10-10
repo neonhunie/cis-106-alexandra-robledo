@@ -1,0 +1,6 @@
+print ("enter exam 1")
+exam1= float (input())
+print ( "enter exam 2")
+exam2 = float (input())
+total= .60*exam1 + .40*exam2
+print (" your total is "+ str(total))

@@ -1,0 +1,6 @@
+print ("enter name")
+name= (input())
+print ("enter steps walked")
+stepswalked=float(input())
+caloriesburned= stepswalked*.25
+print (name + " your total calories burned is " + str(caloriesburned))

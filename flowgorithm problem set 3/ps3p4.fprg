@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps3p4"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-09 08:02:44 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMDk7MDc6NTY6NTMgUE07MjI3Ng=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMDk7MDg6MDI6NDQgUE07MTsyMzc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="steps" type="Real" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="steps"/>
+            <declare name="totalcalsburned" type="Real" array="False" size=""/>
+            <assign variable="totalcalsburned" expression="steps*.25"/>
+            <output expression="name &amp; &quot;your calories burned are&quot; &amp; totalcalsburned" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

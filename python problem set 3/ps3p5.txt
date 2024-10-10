@@ -1,0 +1,8 @@
+print ("enter your fixed costs")
+fixedcosts= float (input())
+print ("enter price per unit")
+priceperunit = float (input())
+print ("enter your cost per unit")
+costperunit = float (input())
+breakevenpoint = fixedcosts/priceperunit-costperunit
+print ("your break even point is "+ str(breakevenpoint))
