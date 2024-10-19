@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps4"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-03 07:51:08 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMDM7MDc6NDE6MTMgUE07MjI2MA=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMDM7MDc6NTE6MDggUE07MTsyMzcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="books" type="Integer" array="False" size=""/>
+            <input variable="books"/>
+            <declare name="costperbook" type="Real" array="False" size=""/>
+            <input variable="costperbook"/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="books*costperbook"/>
+            <declare name="realtotal" type="Real" array="False" size=""/>
+            <if expression="50 &gt; total">
+                <then>
+                    <assign variable="realtotal" expression="total+25"/>
+                </then>
+                <else>
+                    <assign variable="realtotal" expression="total+50"/>
+                </else>
+            </if>
+            <output expression="&quot; your total is &quot; &amp; realtotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

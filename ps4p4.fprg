@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps4p4"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 08:13:44 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMTg7MDg6MDg6NTIgUE07MjI3Mw=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMTg7MDg6MTM6NDQgUE07MTsyMzc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <input variable="name"/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <input variable="cost"/>
+            <declare name="warr" type="Real" array="False" size=""/>
+            <if expression="cost&gt;1000">
+                <then>
+                    <assign variable="warr" expression=".1*cost"/>
+                </then>
+                <else>
+                    <assign variable="warr" expression=".05*cost"/>
+                </else>
+            </if>
+            <declare name="totalcost" type="Real" array="False" size=""/>
+            <assign variable="totalcost" expression="warr+cost"/>
+            <output expression="&quot; the name of your appliance is &quot; &amp; name &amp; &quot; your cost is &quot; &amp; cost &amp; &quot; your warrenty is &quot; &amp; warr &amp; &quot; your total cost is &quot; &amp; totalcost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

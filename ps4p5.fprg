@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps4p5"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 08:28:48 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMTg7MDg6MTM6NDcgUE07MjI3Mw=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMTg7MDg6Mjg6NDggUE07MTsyMzg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <input variable="name"/>
+            <declare name="dependents" type="Integer" array="False" size=""/>
+            <input variable="dependents"/>
+            <declare name="grossincome" type="Real" array="False" size=""/>
+            <input variable="grossincome"/>
+            <declare name="adjgross" type="Real" array="False" size=""/>
+            <assign variable="adjgross" expression="grossincome-dependents*12000"/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <if expression="adjgross&gt;20000">
+                <then>
+                    <assign variable="tax" expression=".20"/>
+                </then>
+                <else>
+                    <assign variable="tax" expression=".10"/>
+                </else>
+            </if>
+            <declare name="incometax" type="Real" array="False" size=""/>
+            <assign variable="incometax" expression="adjgross*tax"/>
+            <if expression="incometax&lt;0">
+                <then>
+                    <assign variable="incometax" expression="100"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot; your last name is &quot; &amp; name &amp; &quot; your gross income is &quot; &amp; grossincome &amp; &quot; your dependants are &quot; &amp; dependents &amp; &quot; adjusted gross &quot; &amp; adjgross &amp; &quot; your income tax is &quot; &amp; incometax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
