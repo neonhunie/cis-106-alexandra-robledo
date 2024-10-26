@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps4p1"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 08:03:17 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMTg7MDc6NTM6MDcgUE07MjI3Mg=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMTg7MDg6MDM6MTcgUE07MTsyMzc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quant" type="Integer" array="False" size=""/>
+            <input variable="quant"/>
+            <declare name="unitprice" type="Real" array="False" size=""/>
+            <declare name="extprice" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <if expression="quant&gt;=1000">
+                <then>
+                    <assign variable="unitprice" expression="3"/>
+                </then>
+                <else>
+                    <assign variable="unitprice" expression="5"/>
+                </else>
+            </if>
+            <assign variable="extprice" expression="unitprice*quant"/>
+            <assign variable="tax" expression=".07*extprice"/>
+            <assign variable="total" expression="extprice+tax"/>
+            <output expression="&quot; your quant is &quot; &amp; quant &amp; &quot; your unitprice &quot; &amp; unitprice &amp; &quot; your extended price is &quot; &amp; extprice &amp; &quot; your tax is &quot; &amp; tax &amp; &quot; your total is &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
