@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps6p1"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-24 08:11:28 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMjQ7MDg6MDk6MjMgUE07MjI2OQ=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMjQ7MDg6MTE6MjggUE07MTsyMzc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="start, stop, odd" type="Integer" array="False" size=""/>
+            <assign variable="start" expression="1"/>
+            <assign variable="stop" expression="25"/>
+            <while expression="start&lt;=stop">
+                <assign variable="odd" expression="start mod 2"/>
+                <if expression="odd!=0">
+                    <then>
+                        <output expression="start" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="start" expression="start+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

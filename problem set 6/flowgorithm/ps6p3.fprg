@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps6p3"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-24 07:36:29 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMjQ7MDc6MjY6MjUgUE07MjI2OQ=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMjQ7MDc6MzY6MjkgUE07MTsyMzgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop, name" type="String" array="False" size=""/>
+            <declare name="midterm, final, counter" type="Integer" array="False" size=""/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <output expression="&quot; do you want to loop yes or no &quot;" newline="True"/>
+            <input variable="loop"/>
+            <assign variable="counter" expression="0"/>
+            <while expression="loop==&quot;yes&quot;">
+                <input variable="name"/>
+                <input variable="midterm"/>
+                <input variable="final"/>
+                <assign variable="average" expression="(midterm+final)/2"/>
+                <output expression="name &amp; &quot; your average is &quot; &amp; average" newline="True"/>
+                <assign variable="counter" expression="counter+1"/>
+                <input variable="loop"/>
+            </while>
+            <output expression="counter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ps6p2"/>
+        <attribute name="authors" value="roble"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-24 07:47:38 PM"/>
+        <attribute name="created" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMjQ7MDc6NDQ6NTMgUE07MjI3MA=="/>
+        <attribute name="edited" value="cm9ibGU7Uk9DS0VUOzIwMjQtMTAtMjQ7MDc6NDc6MzggUE07MTsyMzg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="start, stop, incriment" type="Integer" array="False" size=""/>
+            <input variable="start"/>
+            <input variable="stop"/>
+            <input variable="incriment"/>
+            <while expression="start&lt;=stop">
+                <output expression="start" newline="True"/>
+                <assign variable="start" expression="start+incriment"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
